@@ -1,0 +1,872 @@
+/**
+ * StoreToGo SA — best.css
+ * Bootstrap-aligned responsive layer for ALL pages.
+ * Does NOT style header / menu / top bar (kept as-is).
+ * Does NOT change HTML content or image sources — layout only.
+ *
+ * Breakpoints (Bootstrap 3 + large screens):
+ *   Mobile:  < 768px
+ *   Tablet:  768px – 991px
+ *   Laptop:  992px – 1199px
+ *   Desktop: 1200px – 1399px
+ *   Large:   1400px – 1919px
+ *   Huge:    1920px+
+ */
+
+/* =========================================================
+   1. GLOBAL BASE (content area only — header/menu untouched)
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Responsive media — keep SEO src/alt intact.
+   Header / menu / top bar excluded so old header style stays. */
+img:not(#header img):not(.top-header-area img):not(#cssmenu img),
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+#header img,
+.top-header-area img,
+#cssmenu img,
+#header .logo,
+#header img.logo {
+  max-width: none;
+}
+
+table {
+  max-width: 100%;
+}
+
+/* =========================================================
+   2. PAGE SHELL — breadcrumbs, main product sections
+   ========================================================= */
+.page-pro {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page-pro .container-fluid {
+  width: 100% !important;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-pro h4 {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}
+
+#serico,
+#serico-hg {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#serico .container-fluid,
+#serico-hg .container-fluid {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+#serico-hg .row.sty-wid,
+#serico-hg .row.sty-wid1,
+#serico .centet-all,
+#serico-hg .centet-all,
+#serico .row.sty-wid,
+#serico .row.sty-wid1 {
+  width: 92% !important;
+  max-width: 1390px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  box-sizing: border-box;
+}
+
+#serico .yCmsComponent.sortimo-component-slot,
+#serico-hg .row.sty-wid > .yCmsComponent,
+#serico-hg .row.sty-wid1 > .yCmsComponent,
+#serico .row.sty-wid > .yCmsComponent,
+#serico .row.sty-wid1 > .yCmsComponent {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  float: none !important;
+  box-sizing: border-box;
+}
+
+/* Headlines */
+#serico-hg .text-component .component-headline,
+#serico .text-component .component-headline,
+#serico-hg .text-component h1,
+#serico-hg .text-component h2,
+#serico-hg .text-component h3,
+#serico .text-component h1,
+#serico .text-component h2,
+#serico .text-component h3 {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+#serico-hg .text-component .text,
+#serico .text-component .text,
+#serico-hg .text-component .text p,
+#serico .text-component .text p {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* =========================================================
+   3. SORTIMO TEXT + IMAGE BLOCKS (fixed inline widths → fluid)
+   ========================================================= */
+.sortimo-component.text-picture-component {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+}
+
+.sortimo-component.text-picture-component > .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Kill fixed px widths from inline styles without editing HTML */
+.sortimo-component.text-picture-component .image-container,
+.sortimo-component.text-picture-component .text-container {
+  float: none !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+.sortimo-component.text-picture-component .image-container {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.sortimo-component.text-picture-component .image-container img {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Wide hero (1050 + 340) */
+.sortimo-component.text-picture-component.wide-image .image-container {
+  width: 68% !important;
+  max-width: 68% !important;
+  height: auto !important;
+  min-height: 260px;
+  aspect-ratio: 1050 / 510;
+}
+
+.sortimo-component.text-picture-component.wide-image .text-container {
+  width: 32% !important;
+  max-width: 32% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 32px !important;
+}
+
+/* 50/50 wide-low / wide-high */
+.sortimo-component.text-picture-component.wide-low .image-container,
+.sortimo-component.text-picture-component.wide-high .image-container {
+  width: 50% !important;
+  max-width: 50% !important;
+  height: auto !important;
+}
+
+.sortimo-component.text-picture-component.wide-low .text-container,
+.sortimo-component.text-picture-component.wide-high .text-container {
+  width: 50% !important;
+  max-width: 50% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 32px !important;
+}
+
+.sortimo-component.text-picture-component.wide-low .image-container {
+  aspect-ratio: 695 / 340;
+  min-height: 220px;
+}
+
+.sortimo-component.text-picture-component.wide-high .image-container {
+  aspect-ratio: 695 / 510;
+  min-height: 260px;
+}
+
+/* Square pairs */
+.sortimo-component.text-picture-component.square-small {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.sortimo-component.text-picture-component.square-small > .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.sortimo-component.text-picture-component.square-small .image-container,
+.sortimo-component.text-picture-component.square-small .text-container {
+  width: 50% !important;
+  max-width: 50% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1;
+}
+
+.sortimo-component.text-picture-component.square-small .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px !important;
+}
+
+/* Generic fallback when no wide-* class — still override inline px */
+.sortimo-component.text-picture-component:not(.wide-image):not(.wide-low):not(.wide-high):not(.square-small) .image-container,
+.sortimo-component.text-picture-component:not(.wide-image):not(.wide-low):not(.wide-high):not(.square-small) .text-container {
+  width: 50% !important;
+  max-width: 50% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* =========================================================
+   4. TILES, DOWNLOADS, ANCHORS, SLOTS
+   ========================================================= */
+.sortimo-component.tile-component,
+.sortimo-component.image-component,
+.sortimo-component.download-component,
+.sortimo-component.anchor-component,
+.sortimo-component.slots-component,
+.sortimo-component.tooltip-component {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  box-sizing: border-box;
+}
+
+.sortimo-component.tile-component .single-tile,
+.sortimo-component.tile-component .tile {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sortimo-component.tile-component img,
+.sortimo-component.image-component img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sortimo-component.download-component .download-item {
+  width: 340px !important;
+  max-width: calc(100% - 10px) !important;
+  height: auto !important;
+  min-height: 280px;
+  box-sizing: border-box;
+}
+
+.sortimo-component.download-component .download-image img,
+.sortimo-component.download-component .image {
+  max-width: 100%;
+  height: auto;
+}
+
+.sortimo-component.anchor-component {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 12px 10px;
+  overflow: visible !important;
+  padding: 16px 0;
+}
+
+.sortimo-component.anchor-component .anchor-item {
+  float: none !important;
+  flex: 1 1 140px;
+  max-width: 190px;
+  min-width: 120px;
+  width: auto !important;
+  box-sizing: border-box;
+}
+
+.sortimo-component.slots-component .item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.sortimo-component.slots-component .slot-item,
+.sortimo-component.slots-component .slot-item.small-slot {
+  float: none !important;
+  flex: 0 0 calc(25% - 10px);
+  max-width: calc(25% - 10px);
+  width: calc(25% - 10px) !important;
+  margin: 0 5px 10px !important;
+  box-sizing: border-box;
+}
+
+.sortimo-component.slots-component .slot-item .image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sortimo-component.slots-component .slot-item .text-container {
+  height: auto !important;
+  min-height: 100px;
+}
+
+.sortimo-component.tooltip-component .image-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.sortimo-component.tooltip-component .content-tab-image-container img,
+.sortimo-component.tooltip-component .tooltip-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Product hub grids (van-racking tiles etc.) */
+#serico .row [class*="col-"] img,
+#serico-hg .row [class*="col-"] img,
+section .row [class*="col-"] > img,
+section .row [class*="col-"] a > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   5. COMPANY PAGES — home / about / contact / install / blog
+   (layout only; header/menu excluded)
+   ========================================================= */
+#stroetogo-banner,
+#stroetogo-banner .slider,
+#stroetogo-banner .slide_viewer,
+#stroetogo-banner .slide_group,
+#stroetogo-banner .slide {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#stroetogo-banner .slide img,
+#stroetogo-banner img.show,
+#stroetogo-banner img.hiden {
+  max-width: 100%;
+  height: auto;
+}
+
+#footer .container-fluid,
+#rated-main .container-fluid,
+#back .container-fluid {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Blog / news cards */
+#newsfeeds,
+.blog-list,
+.blog-detals,
+.blog-details {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#newsfeeds img,
+.blog-list img,
+.blog-detals img,
+.blog-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact / forms */
+form input,
+form textarea,
+form select {
+  max-width: 100%;
+}
+
+/* Installation gallery */
+#installation img,
+.installation img,
+.fancybox img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   6. HUGE SCREENS (1920px+)
+   ========================================================= */
+@media (min-width: 1920px) {
+  #serico-hg .row.sty-wid,
+  #serico-hg .row.sty-wid1,
+  #serico .centet-all,
+  #serico-hg .centet-all,
+  #serico .row.sty-wid,
+  #serico .row.sty-wid1 {
+    width: 85% !important;
+    max-width: 1600px !important;
+  }
+
+  .page-pro .container-fluid {
+    max-width: 1800px;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container {
+    width: 70% !important;
+    max-width: 70% !important;
+    min-height: 320px;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .text-container {
+    width: 30% !important;
+    max-width: 30% !important;
+    padding: 36px 40px !important;
+  }
+}
+
+/* =========================================================
+   7. LARGE DESKTOP (1400px – 1919px)
+   ========================================================= */
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .sortimo-component.text-picture-component.wide-image .image-container {
+    width: 68% !important;
+    max-width: 68% !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .text-container {
+    width: 32% !important;
+    max-width: 32% !important;
+  }
+}
+
+/* =========================================================
+   8. DESKTOP / LAPTOP (1200px – 1399px)
+   ========================================================= */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #serico-hg .row.sty-wid,
+  #serico-hg .row.sty-wid1,
+  #serico .centet-all,
+  #serico-hg .centet-all,
+  #serico .row.sty-wid,
+  #serico .row.sty-wid1 {
+    width: 94% !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container {
+    width: 62% !important;
+    max-width: 62% !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .text-container {
+    width: 38% !important;
+    max-width: 38% !important;
+    padding: 24px 28px !important;
+  }
+
+  .sortimo-component.slots-component .slot-item,
+  .sortimo-component.slots-component .slot-item.small-slot {
+    flex: 0 0 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    width: calc(25% - 10px) !important;
+  }
+}
+
+/* =========================================================
+   9. LAPTOP / SMALL DESKTOP (992px – 1199px)
+   ========================================================= */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #serico-hg .row.sty-wid,
+  #serico-hg .row.sty-wid1,
+  #serico .centet-all,
+  #serico-hg .centet-all,
+  #serico .row.sty-wid,
+  #serico .row.sty-wid1 {
+    width: 96% !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container {
+    width: 58% !important;
+    max-width: 58% !important;
+    min-height: 220px;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .text-container {
+    width: 42% !important;
+    max-width: 42% !important;
+    padding: 20px 22px !important;
+  }
+
+  .sortimo-component.slots-component .slot-item,
+  .sortimo-component.slots-component .slot-item.small-slot {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    width: calc(50% - 10px) !important;
+  }
+
+  .sortimo-component.download-component .download-item {
+    width: 300px !important;
+  }
+}
+
+/* =========================================================
+   10. TABLET (768px – 991px)
+   ========================================================= */
+@media (min-width: 768px) and (max-width: 991px) {
+  #serico-hg .row.sty-wid,
+  #serico-hg .row.sty-wid1,
+  #serico .centet-all,
+  #serico-hg .centet-all,
+  #serico .row.sty-wid,
+  #serico .row.sty-wid1 {
+    width: 96% !important;
+    max-width: 100% !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container,
+  .sortimo-component.text-picture-component.wide-image .text-container,
+  .sortimo-component.text-picture-component.wide-low .image-container,
+  .sortimo-component.text-picture-component.wide-low .text-container,
+  .sortimo-component.text-picture-component.wide-high .image-container,
+  .sortimo-component.text-picture-component.wide-high .text-container,
+  .sortimo-component.text-picture-component:not(.square-small) .image-container,
+  .sortimo-component.text-picture-component:not(.square-small) .text-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .sortimo-component.text-picture-component .text-container {
+    padding: 22px 20px !important;
+  }
+
+  .sortimo-component.text-picture-component .text-container .arrow-container {
+    display: none !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container,
+  .sortimo-component.text-picture-component.wide-low .image-container,
+  .sortimo-component.text-picture-component.wide-high .image-container {
+    min-height: 240px;
+  }
+
+  .sortimo-component.slots-component .slot-item,
+  .sortimo-component.slots-component .slot-item.small-slot {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    width: calc(50% - 10px) !important;
+  }
+
+  .sortimo-component.anchor-component .anchor-item {
+    flex: 1 1 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
+  }
+
+  .sortimo-component.download-component .download-item {
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+
+  #serico-hg .text-component.big-header .component-headline,
+  #serico .text-component.big-header .component-headline {
+    font-size: clamp(24px, 3.5vw, 34px) !important;
+    line-height: 1.3;
+  }
+}
+
+/* =========================================================
+   11. MOBILE + SMALL TABLET (< 768px) — Bootstrap xs
+   ========================================================= */
+@media (max-width: 767px) {
+  .page-pro {
+    padding: 10px 0;
+  }
+
+  .page-pro h4 {
+    font-size: 13px !important;
+    line-height: 1.4;
+  }
+
+  #serico {
+    padding-top: 24px !important;
+  }
+
+  #serico .container-fluid,
+  #serico-hg .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #serico-hg .row.sty-wid,
+  #serico-hg .row.sty-wid1,
+  #serico .centet-all,
+  #serico-hg .centet-all,
+  #serico .row.sty-wid,
+  #serico .row.sty-wid1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Stack all image/text splits */
+  .sortimo-component.text-picture-component > .row {
+    flex-direction: column !important;
+  }
+
+  .sortimo-component.text-picture-component .image-container,
+  .sortimo-component.text-picture-component .text-container,
+  .sortimo-component.text-picture-component.wide-image .image-container,
+  .sortimo-component.text-picture-component.wide-image .text-container,
+  .sortimo-component.text-picture-component.wide-low .image-container,
+  .sortimo-component.text-picture-component.wide-low .text-container,
+  .sortimo-component.text-picture-component.wide-high .image-container,
+  .sortimo-component.text-picture-component.wide-high .text-container,
+  .sortimo-component.text-picture-component:not(.square-small) .image-container,
+  .sortimo-component.text-picture-component:not(.square-small) .text-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container,
+  .sortimo-component.text-picture-component.wide-low .image-container,
+  .sortimo-component.text-picture-component.wide-high .image-container {
+    min-height: 200px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .sortimo-component.text-picture-component .text-container {
+    padding: 18px 16px !important;
+  }
+
+  .sortimo-component.text-picture-component .text-container .arrow-container {
+    display: none !important;
+  }
+
+  /* Square blocks: keep side-by-side on phone if space, else stack text */
+  .sortimo-component.text-picture-component.square-small > .row {
+    flex-wrap: wrap !important;
+  }
+
+  .sortimo-component.text-picture-component.square-small .image-container,
+  .sortimo-component.text-picture-component.square-small .text-container {
+    width: 50% !important;
+    max-width: 50% !important;
+  }
+
+  .sortimo-component.slots-component .slot-item,
+  .sortimo-component.slots-component .slot-item.small-slot {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100% !important;
+    margin: 0 0 12px !important;
+  }
+
+  .sortimo-component.anchor-component .anchor-item {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    min-width: 0;
+  }
+
+  .sortimo-component.download-component .download-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #serico-hg .text-component.big-header .component-headline,
+  #serico .text-component.big-header .component-headline {
+    font-size: clamp(22px, 6vw, 28px) !important;
+    line-height: 1.3;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  #serico-hg .text-component .component-headline.subheadline,
+  #serico .text-component .component-headline.subheadline {
+    font-size: clamp(15px, 4vw, 18px) !important;
+  }
+
+  #serico-hg .text-component.small-header .component-headline {
+    font-size: 20px !important;
+    line-height: 1.3;
+  }
+
+  .sortimo-component.image-component .overlay-container {
+    padding: 24px 14px !important;
+  }
+
+  .sortimo-component.image-component .overlay-container .text {
+    font-size: 18px !important;
+    line-height: 1.35;
+  }
+
+  /* Bootstrap columns full width on xs when stacked oddly */
+  #serico .row > [class*="col-"],
+  #serico-hg .row > [class*="col-"] {
+    margin-bottom: 12px;
+  }
+}
+
+/* =========================================================
+   12. SMALL PHONES (< 480px)
+   ========================================================= */
+@media (max-width: 479px) {
+  #serico .container-fluid,
+  #serico-hg .container-fluid,
+  .page-pro .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sortimo-component.text-picture-component.square-small .image-container,
+  .sortimo-component.text-picture-component.square-small .text-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: auto;
+    min-height: 160px;
+  }
+
+  .sortimo-component.text-picture-component.square-small .image-container {
+    aspect-ratio: 1 / 1;
+  }
+
+  .sortimo-component.anchor-component .anchor-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .sortimo-component.text-picture-component .text-container {
+    padding: 14px 12px !important;
+  }
+
+  .sortimo-component.text-picture-component.wide-image .image-container,
+  .sortimo-component.text-picture-component.wide-low .image-container,
+  .sortimo-component.text-picture-component.wide-high .image-container {
+    min-height: 170px;
+  }
+}
+
+/* =========================================================
+   13. SR5 / FR5 / TopSystem body-class extras (layout only)
+   ========================================================= */
+.sr5-page .sr5-square-row,
+.fr5-page .sr5-square-row,
+.topsystem-page .sr5-square-row {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 92% !important;
+  max-width: 1390px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.sr5-page .sr5-square-row > .yCmsComponent {
+  float: none !important;
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  width: calc(50% - 10px) !important;
+  margin: 0 5px 10px !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .sr5-page .sr5-square-row {
+    width: 96% !important;
+  }
+
+  .sr5-page .sr5-square-row > .yCmsComponent {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100% !important;
+    margin: 0 0 14px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .sr5-page .sr5-square-row {
+    width: 100% !important;
+  }
+}
+
+/* =========================================================
+   14. PRINT / ACCESSIBILITY
+   ========================================================= */
+@media print {
+  #header,
+  .top-header-area,
+  #cssmenu,
+  #express,
+  .express {
+    display: none !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}

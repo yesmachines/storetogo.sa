@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect /blog/slug.php to /blog/slug (301 redirect)
+    RewriteCond %{REQUEST_URI} ^/blog/([^/]+)\.php$ [NC]
+    RewriteRule ^blog/([^/]+)\.php$ /blog/%1 [R=301,L]
+
+    # Rewrite clean /blog/slug to blog.php?slug=slug
+    RewriteRule ^blog/([^/]+)$ blog.php?slug=$1 [L,QSA]
+</IfModule>

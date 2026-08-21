@@ -1,0 +1,684 @@
+#header a.active2:hover {
+    padding: 8px 0px 11px 0px;
+}
+
+#header .active2 i {
+    color: #484849;
+    border-bottom: 0px solid #006cb4;
+    padding-bottom: 0px;
+    margin-right: 0em;
+}
+
+#header .active2 i:hover {
+    color: #006cb4;
+    border-bottom: 0px solid #006cb4;
+    padding: 0px 0px 0px 0px;
+}
+
+#header .right .spp {
+    color: #006cb4;
+}
+
+
+#stroetogo-banner .slide__text {
+    height: auto;
+}
+
+#stroetogo-banner .slide__text h2::after {
+    top: 90px;
+}
+
+#border {
+    border-bottom: 2px solid #dadada;
+    position: absolute;
+    width: 100%;
+    margin-top: -42px;
+    z-index: -9;
+}
+
+#contact-content p span {
+    color: #fff;
+    font-weight: 800;
+    background: #006cb4;
+    padding: 5px 5px 2px 5px;
+}
+
+/*bANNER*/
+
+.pattern {
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    right: 0;
+    width: 44%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.pattern--lines {
+    background-image: url(../images/overlay-lines1.png);
+    background-position: 100% 0;
+    opacity: .5;
+}
+
+
+
+.sli__text {
+    height: 150px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+    background: #006cb4;
+}
+
+#rhino-banner .slide__text h2 {
+    color: #484849;
+}
+
+#rhino-banner .slide__text h2:after {
+    background: #fff;
+}
+
+#rhino-banner .slide__text {
+    height: 160px;
+}
+
+#rhino-banner .slide__text h2:after {
+    top: 190px;
+}
+
+
+
+#contact-content .container-fluid {
+    width: 80%;
+}
+
+#contact-content {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #dedede;
+}
+
+#contact-content h3 {
+    font-weight: 600;
+    color: #006cb4;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#contact-content p {
+    line-height: 24px;
+    font-size: 1.6rem;
+    color: #494b42;
+    margin: 0 0 2.6rem;
+    margin-top: 22px;
+    letter-spacing: -.0rem;
+}
+
+#contact-content span {
+    color: #006cb4;
+    font-weight: 400;
+    font-size: 1.6rem
+}
+
+#contact-content h4 {
+    font-size: 1.8rem;
+    color: #006cb4;
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+#contact-content .up p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#contact-content h5 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 6px;
+}
+
+
+#contact-form .container-fluid {
+    width: 80%;
+}
+
+#contact-form {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#contact-form h2 {
+    color: #161616;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 22px;
+}
+
+#contact-form p {
+    font-size: 1.6rem;
+}
+
+#contact-form form {
+    margin-top: 1%;
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 1.2rem;
+
+}
+
+input[type=submit] {
+    background-color: #006cb4;
+    color: white;
+    padding: 17px 0px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.4rem;
+
+}
+
+input[type=submit]:hover {
+    background-color: #484849;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+#blog .container-fluid {
+    width: 90%;
+}
+
+#blog {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+#blog h2 {
+    color: #f26726;
+    margin-top: 0px;
+    font-size: 3rem;
+    margin-bottom: 1%;
+}
+
+#blog p {
+    line-height: 26px;
+    font-size: 1.6rem;
+    color: #494b42;
+    margin: 0 0 .5rem;
+    margin-top: 0px;
+    letter-spacing: -.0rem;
+}
+
+#blog span {
+    color: #f26726;
+    font-weight: 600;
+    font-size: 2rem
+}
+
+
+#blog .li-2 {
+    margin-bottom: 15px;
+    padding-left: 3px;
+}
+
+#blog .li-2 li {
+    display: block;
+    background: url(../images/bull.png) left top no-repeat;
+    background-position: 0px 6px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+}
+
+
+#blog .ren {
+    background: #006cb4;
+    padding: 10px;
+    padding-left: 20px;
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+}
+
+#blog ul li a {
+    color: #727272;
+}
+
+#blog ul {
+    margin-top: 30px;
+    padding-left: 12px;
+    border-left: 1px solid #006cb4;
+}
+
+#blog ul li {
+    display: block;
+    background: url(../images/bull.png) left top no-repeat;
+    background-position: 0px 6px;
+    padding-left: 20px;
+    line-height: 24px;
+    font-size: 1.7rem;
+    font-family: Circular Std Medium, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(73, 75, 66);
+    margin-top: 15px;
+}
+
+
+
+#about-content .li-2 li p {
+    font-size: 1.3rem
+}
+
+#about-content h4 {
+    font-size: 1.6rem;
+    color: rgb(73, 75, 66);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+
+#about-banner .box {
+    background: #fff;
+    height: 7px;
+    position: absolute;
+    z-index: 9;
+    margin-top: -1px;
+    width: 100%;
+    opacity: .6;
+}
+
+
+
+#about-banner {
+    z-index: -999;
+}
+
+
+
+
+
+
+#blog figure {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#blog a img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+#blog a:hover img {
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+#blog h3 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: rgb(73, 75, 66);
+    line-height: 22px;
+    margin-bottom: 40px;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px) {}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px) {
+
+
+    #contact-content {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px) {
+
+    #contact-content {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    /*Banner*/
+    .sli__text {
+        height: 180px;
+    }
+
+    #rhino-banner .slide__text {
+        height: 135px;
+    }
+
+    #rhino-banner .slide__text h2::after {
+        top: 150px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px) {
+
+    #about-banner h2 {
+        font-size: 30px
+    }
+
+
+    #contact-content {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    #contact-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    /*Banner*/
+    .sli__text {
+        height: 180px;
+    }
+
+    #rhino-banner .slide__text {
+        height: 135px;
+    }
+
+    #rhino-banner .slide__text h2::after {
+        top: 150px;
+    }
+
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1365px) {
+
+    #contact-content {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    /*Banner*/
+    .sli__text {
+        height: 180px;
+    }
+
+    #rhino-banner .slide__text {
+        height: 135px;
+    }
+
+    #rhino-banner .slide__text h2::after {
+        top: 150px;
+    }
+
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+
+    #contact-content {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /*Banner*/
+    .sli__text {
+        height: 180px;
+    }
+
+    #rhino-banner .slide__text {
+        height: 135px;
+    }
+
+    #rhino-banner .slide__text h2::after {
+        top: 150px;
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width :1023px) {
+
+    #contact-banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+
+
+
+
+
+    }
+
+    #contact-banner .container-fluid {
+        width: 90%;
+    }
+
+    #contact-banner h2 {
+        font-size: 2.5rem;
+        margin-left: -3%;
+    }
+
+
+
+    #contact-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px) {
+
+    #contact-banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #contact-banner h2 {
+        width: 100%;
+        font-size: 2.8rem;
+        margin-left: 0%;
+        margin-top: 50%;
+        margin-bottom: 10%;
+    }
+
+
+    #contact-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #contact-form {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #contact-content .container-fluid {
+        width: 90%;
+    }
+
+    #contact-content h3 {
+        font-size: 2.5rem;
+    }
+
+    #contact-form h2 {
+        font-size: 26px;
+    }
+
+    #contact-content p {
+        width: 100%;
+    }
+
+    #contact-form .container-fluid {
+        width: 90%;
+    }
+
+
+    #header {
+        padding-bottom: 0px;
+    }
+
+}
+
+@media only screen and (max-width : 375px) {
+
+    #contact-banner h2 {
+        margin-top: 54%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+
+    #contact-banner h2 {
+        margin-top: 64%;
+        margin-bottom: 12%;
+        width: 100%;
+    }
+
+}
