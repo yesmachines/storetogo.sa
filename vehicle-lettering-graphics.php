@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="" /> <!--***************************************--><!-- FONT -->
+    <link rel="canonical" href="https://www.storetogoo.com/sa/vehicle-lettering-graphics.php" /> <!--***************************************--><!-- FONT -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">

@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="van racking, van racking in uae, van racking in dubai, van roofing in uae, van roofing in Dubai, van wall and cladding in uae">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="http://storetogo.ae/about.php" />
+  <link rel="canonical" href="http://storetogoo.com/sa/about.php" />
 
 
   <!--***************************************-->

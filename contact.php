@@ -101,7 +101,7 @@ if (isset($_POST['subc'])) {
    <meta charset="utf-8">
    <meta name="keywords" content="Store To Go, Storetogo uae, Store togo dubai">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="canonical" href="" />
+   <link rel="canonical" href="https://www.storetogoo.com/sa/contact.php" />
 
 
    <!--***************************************-->

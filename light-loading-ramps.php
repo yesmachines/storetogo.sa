@@ -28,7 +28,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="canonical" href="" />
+	<link rel="canonical" href="https://www.storetogoo.com/sa/light-loading-ramps.php" />
 
 	
 

@@ -36,9 +36,8 @@ $result = $conn->query($sql);
   <link rel="shortcut icon" href="images/favicon.png">
   <meta charset="utf-8">
   <meta name="keywords" content="van racking, van racking in uae, van racking in dubai, van roofing in uae, van roofing in Dubai, van wall and cladding in uae">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="http://storetogo.ae/blog.php" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="canonical" href="https://www.storetogoo.com/sa/blogs.php" />
 
   <!--***************************************-->
   <!-- FONT -->

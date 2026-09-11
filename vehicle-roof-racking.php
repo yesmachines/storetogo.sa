@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="vehicle roof racking, roof rack systems, roof rack system uae, roof rack systems dubai, vehicle roof racking UAE, vehicle roof racking Dubai, Flexible Roof Rack, Van roof racks ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="canonical" href="" />
+	<link rel="canonical" href="https://www.storetogoo.com/sa/vehicle-roof-racking.php" />
 	
 	<!--***************************************-->
     <script src="js/bootstrap.min.js" ></script>

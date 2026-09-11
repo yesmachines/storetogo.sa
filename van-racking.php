@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Van Racking, Vehicle Racking System, Vechicle racking, van racking system uae, van racking dubai, van racking company uae">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="canonical" href="" />
+	<link rel="canonical" href="https://www.storetogoo.com/sa/van-racking.php" />
 	
 <!--***************************************-->
 <script src="js/bootstrap.min.js" ></script>

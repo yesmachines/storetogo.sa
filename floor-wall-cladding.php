@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Van wall cladding in UAE, vehicle Floor and Wall cladding , Double Floor, vehicle floor cladding uae">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="canonical" href="" />
+	<link rel="canonical" href="https://www.storetogoo.com/sa/floor-wall-cladding.php" />
 	
     <!--***************************************-->
     <script src="js/bootstrap.min.js" ></script>
