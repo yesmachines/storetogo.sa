@@ -238,7 +238,7 @@ if (isset($_POST['subc'])) {
              Whats app-area-start 
  ===============================-->
  <span class="col-img-inr">
-    <a href="https://api.whatsapp.com/send?phone=+971542791581&amp;text=Hello Store To Go!." target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+966554222379&amp;text=Hello Store To Go!." target="_blank">
         <img class="whatsapp" src="./images/whatsapp.png" alt="whatsapp">
     </a> 
     
