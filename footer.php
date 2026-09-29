@@ -5,7 +5,7 @@
 			<div class="col-md-3 col-sm-4">
 				<h3><span>Our</span> Links</h3>
 					<a href="van-racking.php"><p>Products</p></a>
-					<a href="#"><p>Installation</p></a>
+					<a href="installation.php"><p>Installation</p></a>
 					<a href="about.php"><p>About</p></a> 
 					<a href="news.php"><p>News & Resources</p></a>					
 					<!--<a href="#"><p>Tech Blogs</p></a> -->

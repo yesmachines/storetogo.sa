@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <!--***************************************-->
-<script src="js/bootstrap.min.js" ></script>
+
 <!--***************************************-->
 
 
@@ -54,6 +54,7 @@
 
 
 <?php $page ='';  include'header.php';?>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- EMAIL -->
 <?php $page ='';  include'express.php';?>
@@ -209,9 +210,8 @@
 
 <?php 
 
-include 'config.php';
-$sql ="select  *, news.id as newsid from news join news_image ON news.id=news_image.nid group by news.id ORDER BY news.tstamp desc ";
-$result = mysqli_query($con,$sql);
+require_once __DIR__ . '/news-data.php';
+$result = storetogo_news();
 
 $i=0;
 
@@ -227,9 +227,9 @@ $i=0;
                  $month_name = date("F", mktime(0, 0, 0, $month_num, 10)); 
                 
                  
-               $des = substr($value['description'], 0, 300);
+               $des = htmlspecialchars(substr(strip_tags($value['description']), 0, 300), ENT_QUOTES, 'UTF-8');
 
-            $arr[$i] = array('image'=>UPLOADS ."/news/".$value['file'],'date'=>$date,
+            $arr[$i] = array('image'=>UPLOADS ."news/".$value['file'],'date'=>$date,
               'title'=>$value['title'],'desc'=>$value['description']);
                  $i++;
 ?>
@@ -252,7 +252,7 @@ $i=0;
               </div>
           </div>          
           <!-- <img src="images/news/news-3.png"> -->
-            <img src="<?php echo UPLOADS ."/news/".$value['file'];?>">
+            <img src="<?php echo UPLOADS ."news/".$value['file'];?>">
           <div class="min">
             <img src="images/news/insta.png" class="lov">
             <div class="li">
@@ -273,6 +273,7 @@ $i=0;
   </div>
 </a>
 <?php } ?>
+<?php if (!$result): ?><p class="news-empty">News updates are currently unavailable. Please check back soon.</p><?php endif; ?>
       </div>
 
 
@@ -299,117 +300,7 @@ $i=0;
     
     
 
-<script type="text/javascript">
-  // vars
-'use strict'
-var testim = document.getElementById("testim"),
-    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-    testimLeftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    testimSpeed = 4500,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer,
-    touchStartPos,
-    touchEndPos,
-    touchPosDiff,
-    ignoreTouch = 30;
-;
 
-window.onload = function() {
-
-    // Testim Script
-    function playSlide(slide) {
-        for (var k = 0; k < testimDots.length; k++) {
-            testimContent[k].classList.remove("active");
-            testimContent[k].classList.remove("inactive");
-            testimDots[k].classList.remove("active");
-        }
-
-        if (slide < 0) {
-            slide = currentSlide = testimContent.length-1;
-        }
-
-        if (slide > testimContent.length - 1) {
-            slide = currentSlide = 0;
-        }
-
-        if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");            
-        }
-        testimContent[slide].classList.add("active");
-        testimDots[slide].classList.add("active");
-
-        currentActive = currentSlide;
-    
-        clearTimeout(testimTimer);
-        testimTimer = setTimeout(function() {
-            playSlide(currentSlide += 1);
-        }, testimSpeed)
-    }
-
-    testimLeftArrow.addEventListener("click", function() {
-        playSlide(currentSlide -= 1);
-    })
-
-    testimRightArrow.addEventListener("click", function() {
-        playSlide(currentSlide += 1);
-    })    
-
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function() {
-            playSlide(currentSlide = testimDots.indexOf(this));
-        })
-    }
-
-    playSlide(currentSlide);
-
-    // keyboard shortcuts
-    document.addEventListener("keyup", function(e) {
-        switch (e.keyCode) {
-            case 37:
-                testimLeftArrow.click();
-                break;
-                
-            case 39:
-                testimRightArrow.click();
-                break;
-
-            case 39:
-                testimRightArrow.click();
-                break;
-
-            default:
-                break;
-        }
-    })
-    
-    testim.addEventListener("touchstart", function(e) {
-        touchStartPos = e.changedTouches[0].clientX;
-    })
-  
-    testim.addEventListener("touchend", function(e) {
-        touchEndPos = e.changedTouches[0].clientX;
-      
-        touchPosDiff = touchStartPos - touchEndPos;
-      
-        console.log(touchPosDiff);
-        console.log(touchStartPos); 
-        console.log(touchEndPos); 
-
-      
-        if (touchPosDiff > 0 + ignoreTouch) {
-            testimLeftArrow.click();
-        } else if (touchPosDiff < 0 - ignoreTouch) {
-            testimRightArrow.click();
-        } else {
-          return;
-        }
-      
-    })
-}
-</script>
 
 
   
@@ -439,7 +330,7 @@ window.onload = function() {
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 <script>
     

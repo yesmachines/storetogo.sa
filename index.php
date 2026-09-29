@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://www.storetogoo.com/sa/" />
 
   <!--***************************************-->
-  <script src="js/bootstrap.min.js"></script>
+  
   <!--***************************************-->
 
 
@@ -84,6 +84,7 @@
 
   <?php $page = 'home';
   include 'header.php'; ?>
+  <script src="js/bootstrap.min.js"></script>
   <!-- EMAIL -->
   <?php $page = '';
   include 'express.php'; ?>
@@ -699,7 +700,7 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 <script>
   $('.slider').each(function() {

@@ -1621,6 +1621,16 @@
 
  /* Click the image one by one to see the different layout */
 
+ /* Keep articles and the empty state visible if the carousel cannot load. */
+ #newsfeeds #carousel:not(.owl-loaded) {
+   display: block;
+ }
+
+ #newsfeeds #carousel:not(.owl-loaded) > a {
+   display: block;
+   margin-bottom: 20px;
+ }
+
  /* Owl Carousel */
  .owl-carousel .owl-nav .owl-prev,
  .owl-carousel .owl-nav .owl-next,

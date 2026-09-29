@@ -1,5 +1,5 @@
 <!--***************************************-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <!--***************************************-->
 
   <section id="feeds">
@@ -38,9 +38,8 @@
 
 <?php 
 
-include 'config.php';
-$sql ="select  *, news.id as newsid from news join news_image ON news.id=news_image.nid group by news.id ORDER BY news.tstamp desc limit 6";
-$result = mysqli_query($con,$sql);
+require_once __DIR__ . '/news-data.php';
+$result = storetogo_news(6);
 
 $i=0;
 
@@ -56,9 +55,9 @@ $i=0;
                  $month_name = date("F", mktime(0, 0, 0, $month_num, 10)); 
                 
                  
-               $des = substr($value['description'], 0, 300);
+               $des = htmlspecialchars(substr(strip_tags($value['description']), 0, 300), ENT_QUOTES, 'UTF-8');
 
-            $arr[$i] = array('image'=>UPLOADS ."/news/".$value['file'],'date'=>$date,
+            $arr[$i] = array('image'=>UPLOADS ."news/".$value['file'],'date'=>$date,
               'title'=>$value['title'],'desc'=>$value['description']);
                  $i++;
 ?>
@@ -81,7 +80,7 @@ $i=0;
               </div>
           </div>          
           <!-- <img src="images/news/news-3.png"> -->
-            <img src="<?php echo UPLOADS ."/news/".$value['file'];?>">
+            <img src="<?php echo UPLOADS ."news/".$value['file'];?>">
           <div class="min">
             <img src="images/news/insta.png" class="lov">
             <div class="li">
@@ -102,6 +101,7 @@ $i=0;
   </div>
 </a>
 <?php } ?>
+<?php if (!$result): ?><p class="news-empty">News updates are currently unavailable. Please check back soon.</p><?php endif; ?>
 
  <!-- 
 <a href="#" target="blank"><div class="item">
@@ -255,173 +255,14 @@ $i=0;
   </section>
 
 
-<input type="hidden" value="2" id="plus">
-
-
-<script type="text/javascript">
-
-    
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-     $('#plus').val("2");
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-
-
- var plus=$('#plus').val();
-
- var plus = parseInt(plus);
-
- $('#plus').val(plus+1);
-
-  if(plus>6){
-
-
-   /* window.location.href = "https://www.yesmachinery.ae/news.php";*/
-
-  }
-
-  else{
-
-  showSlides(slideIndex += n);
-
-}
-
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-  
-</script>
-
-
-<!--***************************************-->
-
-<script type="text/javascript">
-  // Instantiate the Bootstrap carousel
-  //$('.multi-item-carousel').carousel();
-$('.multi-item-carousel').carousel({
-  interval: false
-});
-
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
-
-  var next = $(this).next();
-
-  if (!next.length) {
-    next = $(this).siblings(':first');
-
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
- if (next.next().length>0) {
-
-
-    next.next().children(':first-child').clone().appendTo($(this));
-    
-  } 
-  else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-
-   
-});
- 
-</script>
-
-
-
-
-<script>
- 
-   $(document).ready(function(){
-
-   $('#ne').click(function(){
-
-     var rightCount = $('#pic_count_right').val();
-      if(rightCount>5)
-       {
-            $('#ne').click(function(){
-                //alert('end');
-                $('#theCarousel').carousel({
-         pause: true,
-            interval: false
-        });
-         //window.location.replace("https://www.yesmachinery.ae/news.php");
-         window.location.href = "https://www.yesmachinery.ae/news.php";
-         
-            });
-       }
-      else
-       {
-         rightCount++;
-    
-        $('#pic_count_right').val(rightCount);
-       }
-    
-     });
-    $('#pre').click(function(){
-
-     var leftCount = $('#pic_count_left').val();
-      if(leftCount>5)
-       {
-              $('#pre').click(function(){
-                   $('#theCarousel').carousel({
-         pause: true,
-            interval: false
-        });
-         //window.location.replace("http://localhost/yes-l/news.php");
-         window.location.href = "https://www.yesmachinery.ae/news.php";
-              });
-       }
-      else
-       {
-         leftCount++;
-    
-        $('#pic_count_left').val(leftCount);
-       }
-    
-     });
-  });
-</script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script type="text/javascript">
+  if (jQuery.fn.owlCarousel && jQuery("#carousel > a").length) {
   jQuery("#carousel").owlCarousel({
   autoplay: true,
   lazyLoad: true,
-  loop: true,
+  loop: jQuery("#carousel > a").length > 2,
   margin: 20,
    /*
   animateOut: 'fadeOut',
@@ -454,4 +295,5 @@ $('.multi-item-carousel .item').each(function(){
     }
   }
 });
+}
 </script>

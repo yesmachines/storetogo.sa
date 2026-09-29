@@ -12,7 +12,9 @@
 <?php
 
 
-define('URL', 'https://storetogo.ae/manage/');
+$isLocal = in_array($_SERVER['SERVER_ADDR'] ?? '', ['127.0.0.1', '::1'], true);
+$basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '/')), '/');
+define('URL', $isLocal ? $basePath . '/manage/' : 'https://storetogo.ae/manage/');
 define("ABS_PATH", $_SERVER['DOCUMENT_ROOT'] . "/manage/");
 define('UPLOADS', URL . 'public/uploads/');
 
@@ -32,12 +34,22 @@ $host='localhost';
 $user='hcoyym1o_storeto';
 $db='hcoyym1o_storetogo';
 $password='oJS#5$88!gr}';
-$con = mysqli_connect($host,$user,$password,$db) or die('error');
-//mysqli_select_db($db, $con);
+if ($isLocal) {
+    $host = '127.0.0.1';
+    $user = 'root';
+    $password = '';
+    $db = 'storetogo';
+}
 
-
-if(!$con){
-     die("connection failed:".mysqli_connect_error());
-
-  }
+$con = false;
+try {
+    $con = @mysqli_connect($host, $user, $password, $db);
+    if ($con) {
+        mysqli_set_charset($con, 'utf8mb4');
+    } else {
+        error_log('Storetogo news database connection failed: ' . mysqli_connect_error());
+    }
+} catch (mysqli_sql_exception $error) {
+    error_log('Storetogo news database connection failed: ' . $error->getMessage());
+}
 ?>
