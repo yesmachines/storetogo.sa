@@ -215,10 +215,10 @@ $i=0;
   </div>
   <div class="content">
     <div class="image-container">
-      <img src="images/jimsy image.jpg" style="width: 45%;">
+      <img src="images/Evelyn-Byju.webp" style="width: 45%;">
     </div>
     <div class="name">
-     Jimcy Justin
+     Evelyn Byju
     </div>
     <div class="description">
       Sales Coordinator<br>
