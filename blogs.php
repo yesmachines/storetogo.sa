@@ -125,29 +125,16 @@ $result = $conn->query($sql);
 
         <div class="col-md-9 col-sm-12 col-xs-12">
 
-          <div class="row">
-
-                <?php
-                if ($result && $result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                ?>
+          <div class="row justify-content-flex-start"> 
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                          <a href="blog/<?php echo $row['slug']; ?>" target="_blank"> 
+                          <a href="#" target="_blank"> 
                             <figure>
-                              <img src="https://bigleap.tech/cms/storage/app/public/<?php echo $row['default_image']; ?>" 
-                                   alt="<?php echo $row['image_alt']; ?>">
+                              <img src="./images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" 
+                                   alt="blog image" class="img-responsive">
                             </figure>
-                            <h3><?php echo $row['blog_title']; ?></h3>
+                            <h3> How a Van Racking System Can Help Your Saudi Arabian Business: A Complete Guide </h3>
                           </a>
-                        </div>
-                <?php 
-                    }
-                } else {
-                ?>
-                    <h3>No Blogs Found!</h3>
-                <?php 
-                }
-                ?>
+                        </div>  
 
 
           </div>

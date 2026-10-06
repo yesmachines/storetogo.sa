@@ -15,10 +15,10 @@ $username = "bigleapt_cms";
 $password = "43lxyTGB-*FS";
 $database ="bigleapt_cms";
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $database ="bigleapt_cms";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database ="bigleapt_cms";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

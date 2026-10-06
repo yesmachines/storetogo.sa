@@ -413,7 +413,9 @@ input[type=submit]:hover {
 
 }
 
-
+.justify-content-flex-start {
+    justify-content: flex-start !important;
+}
 
 
 
