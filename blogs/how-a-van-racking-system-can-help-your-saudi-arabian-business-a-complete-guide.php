@@ -6,7 +6,7 @@
 
   <!--***************************************-->
 
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
   <!--***************************************-->
 
@@ -133,11 +133,12 @@
 <body>
 
   <?php $page = 'blog';
-  include '../header.php'; ?>
+  $siteRootPath = '../';
+  include __DIR__ . '/../header.php'; ?>
 
   <!-- EMAIL -->
-  <?php $page = '';
-  include '../express.php'; ?>
+  <?php
+  include __DIR__ . '/../express.php'; ?>
   <!-- EMAIL -->
 
  
@@ -285,7 +286,7 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
 
             <li><a href="../floor-wall-cladding.php">Floor And Wall Cladding</a></li>
 
-            <li><a href="./vehicle-manufacturers.php">Vechicle Manufacturers</a></li>
+            <li><a href="../vehicle-manufacturers.php">Vechicle Manufacturers</a></li>
 
 
 
@@ -313,6 +314,7 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
 
   <!-- Footer -->
 
+ <?php include '../footer.php'; ?>
 
 
 
@@ -328,8 +330,7 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
 
 
 
-
-  <script type="text/javascript" src="js/storetogoModules.js"></script>
+  <script type="text/javascript" src="../js/storetogoModules.js"></script>
 
 
 
@@ -571,7 +572,7 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
 
 
 
-  <script src="js/custom.js"></script>
+  <script src="../js/custom.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
 

@@ -127,7 +127,7 @@ $result = $conn->query($sql);
 
           <div class="row justify-content-flex-start"> 
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                          <a href="#" target="_blank"> 
+                          <a href="./blogs/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.php"> 
                             <figure>
                               <img src="./images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" 
                                    alt="blog image" class="img-responsive">

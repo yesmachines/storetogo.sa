@@ -1,5 +1,7 @@
 <?php
 
+$siteRootPath = isset($siteRootPath) ? $siteRootPath : './';
+
 if (isset($_POST['subc'])) {
 
   //print_r($_POST);exit;
@@ -136,7 +138,7 @@ if (isset($_POST['subc'])) {
 
     echo "<script>alert('Mail Sent Successfully')</script>";
 
-    echo "<script>window.location='index.php'</script>";
+    echo "<script>window.location=" . json_encode($siteRootPath . 'index.php') . "</script>";
   } else {
 
     echo "<script>alert('Something Wrong.......')</script>";
@@ -161,7 +163,7 @@ if (isset($_POST['subc'])) {
 
       <a href="mailto:sales@storetogoo.com">
 
-      <img src="./images/e-mail.png" alt="mail">
+      <img src="<?php echo $siteRootPath; ?>images/e-mail.png" alt="mail">
       
       </a>
 
@@ -239,7 +241,7 @@ if (isset($_POST['subc'])) {
  ===============================-->
  <span class="col-img-inr">
     <a href="https://api.whatsapp.com/send?phone=+966554222379&amp;text=Hello Store To Go!." target="_blank">
-        <img class="whatsapp" src="./images/whatsapp.png" alt="whatsapp">
+        <img class="whatsapp" src="<?php echo $siteRootPath; ?>images/whatsapp.png" alt="whatsapp">
     </a> 
     
 </span>
@@ -252,7 +254,7 @@ if (isset($_POST['subc'])) {
   <span>
 
     <a href="tel:+971542791581">
-      <img src="./images/phone-call.png" alt="phone">
+      <img src="<?php echo $siteRootPath; ?>images/phone-call.png" alt="phone">
 
     </a>
 
