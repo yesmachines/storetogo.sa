@@ -188,7 +188,7 @@
 </p>
  <p>A well organized van racking solution resolves this issue by transforming your van into a defined storage system that can contain different tools and accessories that you need for your work.</p>
 <h3>What Is a Van Racking System?</h3>
-<p>A van racking system is a storage setup installed inside a commercial van that includes shelves, drawers, cabinets,
+<p>A <a href="https://www.storetogoo.com/sa/van-racking.php"> van racking system </a> is a storage setup installed inside a commercial van that includes shelves, drawers, cabinets,
    toolboxes, racks, and other similar storage accessories that help the operators to keep the tools and equipment organized.
     Operators can allot separate shelves and drawers for each tool and arrange them in work priority so that they have access to the right tools when needed.
 
@@ -244,7 +244,8 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
    With a customized setup design, you get to arrange your vehicles around the business needs and enhance working efficiency.
 
 </p>
-<p>If you are ready to transform your van space, explore the van racking solutions from StoreToGo. Contact us today and find the right setup for your van. </p>
+<p>If you are ready to transform your van space, explore the van racking solutions from <a href="https://www.storetogoo.com/sa/"> StoreToGo</a>.
+   <a href="https://www.storetogoo.com/sa/contact.php"> Contact us</a> today and find the right setup for your van. </p>
 
 
 
