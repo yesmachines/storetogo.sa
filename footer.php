@@ -61,7 +61,7 @@ $siteRootPath = isset($siteRootPath) ? $siteRootPath : './';
 				<div class="container-fluid">
 					<div class="row">
 					<div class="col-md-7 col-sm-9">
-						<p>© 2026  <span>www.storetogo.ae</span> All rights reserved.  Powered By  <a href="http://bigleap.ae/" target="blank"><span>BigLeap</span></a></p>
+						<p>© 2026  <span>www.storetogoo.com</span> All rights reserved.  Powered By  <a href="http://bigleap.ae/" target="blank"><span>BigLeap</span></a></p>
 							</div>
 
 						<div class="col-md-5 col-sm-3">				
