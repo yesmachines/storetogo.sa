@@ -1,15 +1,18 @@
 
+<?php
+$siteRootPath = isset($siteRootPath) ? $siteRootPath : './';
+?>
 <section id="footer">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-sm-4">
 				<h3><span>Our</span> Links</h3>
-					<a href="van-racking.php"><p>Products</p></a>
-					<a href="#"><p>Installation</p></a>
-					<a href="about.php"><p>About</p></a> 
-					<a href="news.php"><p>News & Resources</p></a>					
+					<a href="<?php echo $siteRootPath; ?>van-racking.php"><p>Products</p></a>
+					<a href="<?php echo $siteRootPath; ?>installation.php"><p>Installation</p></a>
+					<a href="<?php echo $siteRootPath; ?>about.php"><p>About</p></a> 
+					<a href="<?php echo $siteRootPath; ?>news.php"><p>News & Resources</p></a>					
 					<!--<a href="#"><p>Tech Blogs</p></a> -->
-					<a href="contact.php"><p>Contact us</p></a>
+					<a href="<?php echo $siteRootPath; ?>contact.php"><p>Contact us</p></a>
 			</div>
 
 
@@ -33,7 +36,7 @@
 
  <div class="col-md-6 col-sm-4 ">
 				
-					<img src="images/logo2.png" class="img-responsive foot-logo" alt=""/>
+					<img src="<?php echo $siteRootPath; ?>images/logo2.png" class="img-responsive foot-logo" alt=""/>
 			</div> 
 
 

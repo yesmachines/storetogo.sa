@@ -314,7 +314,7 @@ At StoreToGo, we provide comprehensive van conversion and racking solutions, hel
 
   <!-- Footer -->
 
- <?php include '../footer.php'; ?>
+ <?php include __DIR__ . '/../footer.php'; ?>
 
 
 
