@@ -203,7 +203,7 @@ $row = $result->fetch_assoc();
        <div class="col-xl-4">
        </div>
        <div class="col-xl-8 top-contact">
-         <a href="mailto:sales@storetogo.ae"> <i class="fas fa-envelope"></i> sales@storetogo.ae </a>
+         <a href="mailto:sales@storetogoo.com"> <i class="fas fa-envelope"></i> sales@storetogoo.com </a>
          <a href="tel:971547918858"> <i class="fas fa-mobile-android-alt"></i> +971 54 791 8858 </a>
 
        </div>

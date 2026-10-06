@@ -27,7 +27,7 @@
 					</p>
 				
 					<p>TEL :  +966 55 422 2379 </p> 
-					<p>Mail : <a href="mailto:sales@storetogo.ae">sales@storetogo.ae</a></p>
+					<p>Mail : <a href="mailto:sales@storetogoo.com">sales@storetogoo.com</a></p>
 			</div>
 
 

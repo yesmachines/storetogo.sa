@@ -68,7 +68,7 @@ if (isset($_POST['subc'])) {
         </div>
     </div>';
 
-    $to = 'sales@storetogo.ae';
+    $to = 'sales@storetogoo.com';
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers .= "From: $mail\r\n";
@@ -213,7 +213,7 @@ if (isset($_POST['subc'])) {
               Kingdom of Saudi Arabia <br>
               Short Address: EKJC7446</p>
             <h5><span>TEL :</span> +966 55 422 2379 </h5> 
-           <p>Mail : <a href="mailto:sales@storetogo.ae"><span>sales@storetogo.ae</span></a></p>
+           <p>Mail : <a href="mailto:sales@storetogoo.com"><span>sales@storetogoo.com</span></a></p>
 
 
          </div>

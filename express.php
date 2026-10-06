@@ -128,7 +128,7 @@ if (isset($_POST['subc'])) {
 
   //echo '<pre>';print_r($message);exit;
 
-  $result = mail('sales@storetogo.ae,', 'Enquiry From STORETOGO website', $message, $header);
+  $result = mail('sales@storetogoo.com,', 'Enquiry From STORETOGO website', $message, $header);
 
   //mail($email,'Thanks for your feedback' , $feedback,$header);
 
@@ -159,7 +159,7 @@ if (isset($_POST['subc'])) {
 
     <span class="slider_open" style="cursor: pointer;">
 
-      <a href="mailto:sales@storetogo.ae">
+      <a href="mailto:sales@storetogoo.com">
 
       <img src="./images/e-mail.png" alt="mail">
       

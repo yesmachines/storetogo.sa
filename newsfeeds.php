@@ -237,7 +237,7 @@ $i=0;
       </span>
       <span class="">
         
-        <a href="mailto:sales@storetogo.ae">sales@storetogo.ae</a>
+        <a href="mailto:sales@storetogoo.com">sales@storetogoo.com</a>
       </span>
     </div>
   </div>
