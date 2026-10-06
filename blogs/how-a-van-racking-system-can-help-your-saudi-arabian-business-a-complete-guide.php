@@ -143,9 +143,6 @@
 
  
 
-  <script src="../js/jquery-latest.min.js" type="text/javascript"></script>
-
-  <script src="../js/script.js"></script>
 
 
 
