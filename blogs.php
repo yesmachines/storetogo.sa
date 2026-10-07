@@ -1,27 +1,3 @@
-<?php include('db_connect.php');
-
-// Enable error reporting
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-// Assuming $conn is your MySQLi connection
-$sql = "SELECT blogs.*, locations.*, websites.*, blogs.created_at as created_at
-        FROM blogs
-        JOIN websites ON blogs.website_id = websites.id
-        JOIN locations ON blogs.location_id = locations.id
-        WHERE blogs.status = 1
-          AND blogs.deleted_at IS NULL
-          AND websites.title LIKE '%Storetogo%'
-          AND locations.location_name LIKE '%sa%'
-        ORDER BY blogs.created_at DESC";
-
-$result = $conn->query($sql);
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
