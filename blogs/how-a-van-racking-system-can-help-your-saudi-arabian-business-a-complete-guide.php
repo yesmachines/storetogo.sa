@@ -26,7 +26,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://www.storetogo.ae/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.php" />
+  <link rel="canonical" href="https://www.storetogoo.com/sa/blogs/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.php" />
 
 
 
@@ -34,13 +34,13 @@
 
   <meta property="og:description" content="Discover how van racking systems help Saudi businesses save time, protect tools and cargo, and cut costs. Read the complete guide before you buy." />
 
-  <meta property="og:url" content="https://www.storetogo.ae/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.php" />
+  <meta property="og:url" content="https://www.storetogoo.com/sa/blogs/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.php" />
 
 
 
-  <meta property="og:image" content="https://www.storetogo.ae/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
+  <meta property="og:image" content="https://www.storetogoo.com/sa/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
 
-  <meta property="og:image:secure_url" content="https://www.storetogo.ae/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
+  <meta property="og:image:secure_url" content="https://www.storetogoo.com/sa/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
 
   <meta property="og:image:width" content="560" />
 
@@ -54,7 +54,7 @@
 
   <meta name="twitter:title" content="Van Racking Systems for Saudi Businesses: Full Guide |Store To Go" />
 
-  <meta name="twitter:image" content="https://www.storetogo.ae/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
+  <meta name="twitter:image" content="https://www.storetogoo.com/sa/images/blog/how-a-van-racking-system-can-help-your-saudi-arabian-business-a-complete-guide.webp" />
 
 
 
@@ -79,12 +79,6 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
 
   <!--***************************************-->
-
-
-
-
-
-
 
   <!-- CSS  ***************************************-->
 
@@ -124,7 +118,7 @@
 
 
 <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
  
 
 
@@ -140,14 +134,6 @@
   <?php
   include __DIR__ . '/../express.php'; ?>
   <!-- EMAIL -->
-
- 
-
-
-
-
-
-
 
   <style>
     h3#main_blog {
