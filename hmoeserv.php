@@ -145,7 +145,7 @@
 			</div> -->
 			<div class="col-md-4">
 				<p class="para">  Discover the difference in working with professionals by switching to our versatile
-					 and reliable van racking solutions. Just as our name suggests, we ensure that you have a fully
+					 and reliable <a href="https://www.storetogoo.com/sa/van-racking.php" style="font-weight: 700; color: #24aeff;"> van racking solutions</a>. Just as our name suggests, we ensure that you have a fully
 					  equipped mobile store that is ready to go. With our robust and easily accessible racking system
 					   you can securely organize your tools to ensure maximum efficiency on every job. As the trusted
 					    suppliers of van racking solutions across the GCC, we are committed to delivering a perfectly
